@@ -1,16 +1,12 @@
-import React from 'react';
-
-function Header() {
-  return (
-    <header className="header">
-      <div className="logo">Prestige Construction</div>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <button className="estimate-btn">Request an Estimate</button>
-      </nav>
-    </header>
-  );
-}
-
-export default Header;
+<header class="header">
+  <div class="logo-container">
+    <h1 class="logo">Prestige Construction</h1>
+  </div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#estimate" class="estimate-btn">Request an Estimate</a></li>
+    </ul>
+  </nav>
+</header>

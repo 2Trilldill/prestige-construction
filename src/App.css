@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #121212;
   color: white;
-  text-align: center;
+  text-align: right;
 }
 
 /* Header */
@@ -28,14 +28,16 @@ body {
   font-weight: bold;
   color: #f0a500;
   flex-grow: 1;
+  text-align: center; /* Ensure the logo is centered */
 }
 
 /* Navigation Links */
 .nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Spread out links */
   gap: 30px;
   flex-grow: 2; /* This ensures the nav container takes up remaining space */
+  align-items: center;
 }
 
 .nav-links {
@@ -75,7 +77,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
   border-radius: 5px;
-  margin-left: auto; /* Push the button to the far right */
+  margin-left: auto; /* Align the button to the far right */
 }
 
 .estimate-btn:hover {
