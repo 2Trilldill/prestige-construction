@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Ensure space between elements */
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Prestige Construction Title */
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0a500;
+  flex-grow: 1;
+}
+
+/* Navigation Links */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-grow: 2; /* This ensures the nav container takes up remaining space */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f0a500;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Request an Estimate Button */
+.estimate-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #f0a500;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  margin-left: auto; /* Push the button to the far right */
+}
+
+.estimate-btn:hover {
+  background-color: #d88b00;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://plus.unsplash.com/premium_photo-1680806490620-b5bb8b693f89?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGlnaCUyMHF1YWxpdHklMjBjb25zdHJ1Y3Rpb24lMjBpbWFnZXxlbnwwfHw0fHx8MA%3D%3D") no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* About & Services */
+.about, .services {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-item {
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ======================== */
+/* 📌 Mobile Responsive Fix */
+/* ======================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .hero-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .estimate-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .service-list {
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
